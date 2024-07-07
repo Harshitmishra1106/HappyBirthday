@@ -3,6 +3,7 @@ package com.example.happybirthday
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.happybirthday.databinding.ActivityBirthDayBinding
@@ -25,5 +26,9 @@ class BirthDay : AppCompatActivity() {
         val str1 = intent.getStringExtra("Wisher")
         binding.textView.text = str
         binding.textView2.text = str1
+
+        binding.imageView.setOnClickListener{
+
+        }
     }
 }
